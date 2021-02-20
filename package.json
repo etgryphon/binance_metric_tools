@@ -6,5 +6,8 @@
   "repository": "https://github.com/etgryphon/binance_metric_tools",
   "author": "Evin Grano <evin.grano@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
