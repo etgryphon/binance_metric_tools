@@ -1,0 +1,10 @@
+{
+  "name": "binance_metric_tools",
+  "version": "1.0.0",
+  "description": "Binance CLT for Metrics",
+  "main": "index.js",
+  "repository": "https://github.com/etgryphon/binance_metric_tools",
+  "author": "Evin Grano <evin.grano@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
