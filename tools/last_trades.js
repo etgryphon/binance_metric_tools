@@ -1,4 +1,5 @@
 const UTILS = require('../utils');
+const { Command } = require('commander');
 
 const runOne = ({ symbol, limit = 500 }) => {
   const path = `/api/v3/trades?symbol=${symbol}${limit != 500 ? `&limit=${limit}` : ''}`;
@@ -43,9 +44,40 @@ const readOne = ({ params, raw}) => {
   return Promise.resolve(true);
 };
 
+const run = (program) => {
+  const [,symbol] = program.args;
+
+  const options = program.opts();
+  console.log(`TEST: ${options.limit}`);
+
+  return runOne({
+    symbol,
+    limit: options.limit
+  });
+};
+
+const processCLT = () => {
+  const program = new Command();
+  program.version('0.0.1');
+
+  program
+    .arguments('[command] <symbol>')
+    .description('How to use last_trades', {
+      command: 'last trades commmand',
+      symbol: 'symbol you would like to test'
+    })
+    .option('-l, --limit <count>', 'set the number of trades you want. DEFAULT: 500', '500');
+
+  program.parse(process.argv);
+
+  return program;
+};
+
 module.exports = {
+  run,
   runOne,
-  readOne
+  readOne,
+  processCLT
 };
 
 

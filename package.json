@@ -11,6 +11,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "commander": "^7.1.0",
     "dotenv": "^8.2.0"
   }
 }
