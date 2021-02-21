@@ -33,7 +33,7 @@ try {
         console.log(`\nSuccess?: ${results}`);
     });
 } catch (e) {
-    console.log(`ERROR: Invalid Command: ${command}`);
+    console.log(`ERROR: Invalid Command: ${command}\nOutput:\n\t${e}`);
     RETURN_VAL = 1;
 }
 

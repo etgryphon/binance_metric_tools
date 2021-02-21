@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+binary-insert@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/binary-insert/-/binary-insert-1.2.1.tgz#834bbb3017d5989d3d0bcdb37f967c01d1362455"
+  integrity sha512-CGsSYzBUL/QqnmL4CTwLQnnVBj5RqPCmVifo5SnqTSbH5heFPtDijsIZJCKmOaXowaYUiiDOc+eZUjpU6NdpMg==
+
 commander@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.1.0.tgz#f2eaecf131f10e36e07d894698226e36ae0eb5ff"
